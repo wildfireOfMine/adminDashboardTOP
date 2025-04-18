@@ -14,7 +14,7 @@ const TopBar = () => {
                 boxSizing: 'border-box',
                 left: '25%',
                 top: '0%',
-                backgroundColor: 'red',
+                backgroundColor: '#fefffe',
             },
             }}
             variant="permanent"

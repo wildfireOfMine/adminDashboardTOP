@@ -52,7 +52,7 @@
 }
 
 .css-1lt5qva-MuiCardContent-root{
-  padding: 70px !important;
+  padding: 60px !important;
 }
 
 a{
@@ -72,4 +72,12 @@ a{
 
 .css-b7dj7n-MuiList-root > li > h2 > a > svg {
   margin: 5px;
+}
+
+.css-4j4xdv-MuiDrawer-docked .MuiDrawer-paper{
+  background-color: #e3e8f1;
+}
+
+.css-hcmlca-MuiDrawer-docked .MuiDrawer-paper{
+  justify-content: center !important;
 }

@@ -6,13 +6,13 @@ const TopBar = () => {
     <Drawer
             className='topBar'
             sx={{
-            width: '75%',
+            width: '80%',
             flexShrink: 0,
             '& .MuiDrawer-paper': {
-                width: '75%',
+                width: '80%',
                 height: '15%',
                 boxSizing: 'border-box',
-                left: '25%',
+                left: '20%',
                 top: '0%',
                 backgroundColor: '#fefffe',
             },

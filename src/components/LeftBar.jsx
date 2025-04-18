@@ -7,10 +7,10 @@ const LeftBar = () => {
     <Drawer
         className='leftBar'
         sx={{
-        width: '25%',
+        width: '20%',
         flexShrink: 0,
         '& .MuiDrawer-paper': {
-            width: '25%',
+            width: '20%',
             boxSizing: 'border-box',
             backgroundColor: '#1992d4',
             color: 'white',

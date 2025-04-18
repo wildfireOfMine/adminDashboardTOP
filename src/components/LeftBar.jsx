@@ -1,0 +1,55 @@
+import { Chat, DocumentScanner, Home, LockClock, People, PersonOff, QuestionAnswer, Settings, Shield } from '@mui/icons-material'
+import { Drawer, Link, List, ListItem } from '@mui/material'
+import React from 'react'
+
+const LeftBar = () => {
+  return (
+    <Drawer
+        sx={{
+        width: '25%',
+        flexShrink: 0,
+        '& .MuiDrawer-paper': {
+            width: '25%',
+            boxSizing: 'border-box',
+        },
+        }}
+        variant="permanent"
+        anchor="left"
+    >
+        <h1>Dashboard</h1>
+        <List>
+            <ListItem>
+                <h2> <Link> <Home/> Home </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <PersonOff/> Profile </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <Chat/> Messages </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <LockClock/> History </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <DocumentScanner/> Tasks </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <People/> Communities </Link></h2>
+            </ListItem>
+        </List>
+        <List>
+            <ListItem>
+                <h2> <Link> <Settings/> Settings </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <QuestionAnswer/> Support </Link></h2>
+            </ListItem>
+            <ListItem>
+                <h2> <Link> <Shield/> Privacy </Link></h2>
+            </ListItem>
+        </List>
+    </Drawer>
+  )
+}
+
+export default LeftBar

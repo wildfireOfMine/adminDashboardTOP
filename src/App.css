@@ -54,3 +54,22 @@
 .css-1lt5qva-MuiCardContent-root{
   padding: 70px !important;
 }
+
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.leftBar{
+  font-size: 0.84em;
+}
+
+.css-b7dj7n-MuiList-root > li > h2 > a {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.css-b7dj7n-MuiList-root > li > h2 > a > svg {
+  margin: 5px;
+}

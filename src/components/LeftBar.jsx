@@ -5,19 +5,25 @@ import React from 'react'
 const LeftBar = () => {
   return (
     <Drawer
+        className='leftBar'
         sx={{
         width: '25%',
         flexShrink: 0,
         '& .MuiDrawer-paper': {
             width: '25%',
             boxSizing: 'border-box',
+            backgroundColor: '#1992d4',
+            color: 'white',
+            a: 'white',
+            li: 'white',
+            h2: 'white',
         },
         }}
         variant="permanent"
         anchor="left"
     >
         <h1>Dashboard</h1>
-        <List>
+        <List className='navBarList'>
             <ListItem>
                 <h2> <Link> <Home/> Home </Link></h2>
             </ListItem>

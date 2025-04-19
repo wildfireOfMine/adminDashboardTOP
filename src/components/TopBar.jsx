@@ -2,7 +2,7 @@ import { NotificationAdd, Search } from '@mui/icons-material'
 import { Button, Drawer, Input } from '@mui/material'
 import React from 'react'
 
-const TopBar = ({user="username"}) => {
+const TopBar = ({user="username", avatar="../../public/vite.svg"}) => {
   return (
     <Drawer
             className='topBar'
@@ -16,30 +16,40 @@ const TopBar = ({user="username"}) => {
                 left: '20%',
                 top: '0%',
                 backgroundColor: '#fefffe',
+                display: 'flex',
+                justifyContent: 'space-around',
+                flexDirection: 'column',
             },
             }}
             variant="permanent"
             anchor="right"
         >
           <div> 
-          <Search/>
-          <Input/>
-          <NotificationAdd/>
-          <img src="../../public/vite.svg" alt="Avatar" style={{
-              width: '50px', 
-            }} />
+            <div>
+              <Search/>
+              <Input/>
+            </div>
+            <div>
+            <NotificationAdd/>
+            <img src={avatar} alt="Avatar" style={{
+                width: '50px', 
+              }} />
 
-            {user}
+              {user}
+            </div>
           </div>
           <div>
-          <img src="../../public/vite.svg" alt="Avatar" style={{
-              width: '50px', 
-            }} />
-          Hi there, {user}
-
-          <Button>New</Button>
-          <Button>Upload</Button>
-          <Button>Share</Button>
+            <div>
+              <img src={avatar} alt="Avatar" style={{
+                  width: '50px', 
+                }} />
+              Hi there, {user}
+            </div>
+            <div>
+              <Button>New</Button>
+              <Button>Upload</Button>
+              <Button>Share</Button>
+            </div>
           </div>
     </Drawer>
   )

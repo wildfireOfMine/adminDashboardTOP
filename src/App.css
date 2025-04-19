@@ -96,6 +96,12 @@ a{
   border-left: 0 !important;
 }
 
-.topBar{
-  display: flex;
+.topBar > div > div {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center;
+}
+
+.topBar > div > div > div > * {
+  margin: 0 15px;
 }

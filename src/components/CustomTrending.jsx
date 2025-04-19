@@ -1,10 +1,10 @@
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 
-const CustomTrending = ({src="../../public/vite.svg", username="@test", description="description", 
-  src2="../../public/vite.svg", username2="@test2", description2="description2", 
-  src3="../../public/vite.svg", username3="@test3", description3="description3",
-  src4="../../public/vite.svg", username4="@test", description4="description4"}) => {
+const CustomTrending = ({src="src/imgs/vite.svg", username="@test", description="description", 
+  src2="src/imgs/vite.svg", username2="@test2", description2="description2", 
+  src3="src/imgs/vite.svg", username3="@test3", description3="description3",
+  src4="src/imgs/vite.svg", username4="@test", description4="description4"}) => {
   return (
     <Card sx={{
       width: '100%',

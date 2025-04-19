@@ -2,7 +2,7 @@ import { NotificationAdd, Search } from '@mui/icons-material'
 import { Button, Drawer, Input } from '@mui/material'
 import React from 'react'
 
-const TopBar = ({user="username", avatar="src/imgs/vite.svg"}) => {
+const TopBar = ({user="username", avatar="/vite.svg"}) => {
   return (
     <Drawer
             className='topBar'

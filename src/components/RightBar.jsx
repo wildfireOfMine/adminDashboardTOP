@@ -26,22 +26,23 @@ const RightBar = () => {
             <h2>Your Projects</h2>
             <Grid className="cardGrid" container spacing={2}>
               <Grid className="cardGrid" size={{ xs: 9, md: 5 } }>
-                <CustomCard title="Test" description="Infernal cries" />
+                <CustomCard title="Welcome to the Admin Dashboard" description="Make yourself at home!" />
               </Grid>
               <Grid className="cardGrid" size={{ xs: 9, md: 5 }}>
-                <CustomCard title="Test" description="Infernal cries" />
+                <CustomCard src="https://www.theodinproject.com/lessons/intermediate-html-and-css-admin-dashboard" 
+                title="What is this? You may ask" description="It's an Odin Project task!" />
               </Grid>
               <Grid className="cardGrid" size={{ xs: 9, md: 5 }}>
-                <CustomCard title="Test" description="Infernal cries" />
+                <CustomCard src="https://my-odin-path.vercel.app/" title="Enjoying the view?" description="Here are some other TOP tasks" />
               </Grid>
               <Grid className="cardGrid" size={{ xs: 9, md: 5 }}>
-                <CustomCard title="Test" description="Infernal cries" />
+                <CustomCard src="https://github.com/wildfireOfMine/adminDashboardTOP" title="Enjoying the code?" description="Done in React MUI and deployed in Vercel!" />
               </Grid>
               <Grid className="cardGrid" size={{ xs: 9, md: 5 }}>
-                <CustomCard title="Test" description="Infernal cries" />
+                <CustomCard src="https://github.com/wildfireOfMine" title="Interested in the coder?" description="Here it's my GitHub!" />
               </Grid>
               <Grid className="cardGrid" size={{ xs: 9, md: 5 }}>
-                <CustomCard title="Test" description="Infernal cries" />
+                <CustomCard title="Don't know what else to write" description="Test" />
               </Grid>
             </Grid>
         </Box>
@@ -70,17 +71,8 @@ const RightBar = () => {
             <h2>Trending</h2>
             <Grid className="cardGrid" container spacing={1}>
                 <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
-                  <CustomTrending className="customTrending" username='@username' description='description'/>
+                  <CustomTrending className="customTrending" />
                 </Grid>
-                {/* <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
-                  <CustomTrending className="customTrending" username='@username' description='description'/>
-                </Grid>
-                <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
-                  <CustomTrending className="customTrending" username='@username' description='description'/>
-                </Grid>
-                <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
-                  <CustomTrending className="customTrending" username='@username' description='description'/>
-                </Grid> */}
             </Grid>
           </Drawer>
         

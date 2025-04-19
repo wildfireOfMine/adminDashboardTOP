@@ -91,3 +91,7 @@ a{
 .css-hcmlca-MuiDrawer-docked .MuiDrawer-paper{
   justify-content: center !important;
 }
+
+.css-11n7drg-MuiPaper-root-MuiDrawer-paper{
+  border-left: 0 !important;
+}

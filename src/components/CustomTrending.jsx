@@ -1,7 +1,10 @@
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 
-const CustomTrending = ({src="../../public/vite.svg", username="", description=""}) => {
+const CustomTrending = ({src="../../public/vite.svg", username="@test", description="description", 
+  src2="../../public/vite.svg", username2="@test2", description2="description2", 
+  src3="../../public/vite.svg", username3="@test3", description3="description3",
+  src4="../../public/vite.svg", username4="@test", description4="description4"}) => {
   return (
     <Card sx={{
       width: '100%',
@@ -15,7 +18,7 @@ const CustomTrending = ({src="../../public/vite.svg", username="", description="
               height: '50px', 
               borderRadius: '50%', 
               objectFit: 'cover', 
-              marginRight: '16px' // Espacio entre la imagen y el texto
+              marginRight: '16px'
             }} />
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} >
           <Typography variant="p" component="p">
@@ -27,53 +30,53 @@ const CustomTrending = ({src="../../public/vite.svg", username="", description="
           </div>
         </CardContent>
         <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-          <img src={src} alt="Avatar" style={{
+          <img src={src2} alt="Avatar" style={{
               width: '50px', 
               height: '50px', 
               borderRadius: '50%', 
               objectFit: 'cover', 
-              marginRight: '16px' // Espacio entre la imagen y el texto
+              marginRight: '16px'
             }} />
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} >
           <Typography variant="p" component="p">
-            {username}
+            {username2}
           </Typography>
           <Typography gutterBottom variant="p" component="p">
-            {description}
+            {description2}
           </Typography>
           </div>
         </CardContent>
         <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-          <img src={src} alt="Avatar" style={{
+          <img src={src3} alt="Avatar" style={{
               width: '50px', 
               height: '50px', 
               borderRadius: '50%', 
               objectFit: 'cover', 
-              marginRight: '16px' // Espacio entre la imagen y el texto
+              marginRight: '16px'
             }} />
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} >
           <Typography variant="p" component="p">
-            {username}
+            {username3}
           </Typography>
           <Typography gutterBottom variant="p" component="p">
-            {description}
+            {description3}
           </Typography>
           </div>
         </CardContent>
         <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-          <img src={src} alt="Avatar" style={{
+          <img src={src4} alt="Avatar" style={{
               width: '50px', 
               height: '50px', 
               borderRadius: '50%', 
               objectFit: 'cover', 
-              marginRight: '16px' // Espacio entre la imagen y el texto
+              marginRight: '16px'
             }} />
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} >
           <Typography variant="p" component="p">
-            {username}
+            {username4}
           </Typography>
           <Typography gutterBottom variant="p" component="p">
-            {description}
+            {description4}
           </Typography>
           </div>
         </CardContent>

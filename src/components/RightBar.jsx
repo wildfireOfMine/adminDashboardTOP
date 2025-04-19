@@ -69,9 +69,18 @@ const RightBar = () => {
             </Grid>
             <h2>Trending</h2>
             <Grid className="cardGrid" container spacing={1}>
-                <Grid className="cardGrid" size={{ xs: 9, md: 9 } }>
-                <CustomTrending username='@username' description='description'/>
+                <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
+                  <CustomTrending className="customTrending" username='@username' description='description'/>
                 </Grid>
+                {/* <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
+                  <CustomTrending className="customTrending" username='@username' description='description'/>
+                </Grid>
+                <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
+                  <CustomTrending className="customTrending" username='@username' description='description'/>
+                </Grid>
+                <Grid className="cardGrid" size={{ xs: 2, md: 9 } }>
+                  <CustomTrending className="customTrending" username='@username' description='description'/>
+                </Grid> */}
             </Grid>
           </Drawer>
         

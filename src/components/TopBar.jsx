@@ -1,7 +1,8 @@
-import { Drawer } from '@mui/material'
+import { NotificationAdd, Search } from '@mui/icons-material'
+import { Button, Drawer, Input } from '@mui/material'
 import React from 'react'
 
-const TopBar = () => {
+const TopBar = ({user="username"}) => {
   return (
     <Drawer
             className='topBar'
@@ -20,7 +21,26 @@ const TopBar = () => {
             variant="permanent"
             anchor="right"
         >
-          <h2>Test</h2>
+          <div> 
+          <Search/>
+          <Input/>
+          <NotificationAdd/>
+          <img src="../../public/vite.svg" alt="Avatar" style={{
+              width: '50px', 
+            }} />
+
+            {user}
+          </div>
+          <div>
+          <img src="../../public/vite.svg" alt="Avatar" style={{
+              width: '50px', 
+            }} />
+          Hi there, {user}
+
+          <Button>New</Button>
+          <Button>Upload</Button>
+          <Button>Share</Button>
+          </div>
     </Drawer>
   )
 }

@@ -95,3 +95,7 @@ a{
 .css-11n7drg-MuiPaper-root-MuiDrawer-paper{
   border-left: 0 !important;
 }
+
+.topBar{
+  display: flex;
+}
